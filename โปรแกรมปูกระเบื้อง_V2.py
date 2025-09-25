@@ -1,6 +1,10 @@
-tilecolor = {'red':100,'gold':200,'white':90}
+tilecolor = {'red':100,'gold':200,'white':90,'gray':30}
 
-print('------ โปรแกรมคำนวณกระเบื้อง by Sofwan-------')
+print('------ราคากระเบื้อง-------')
+for c,t in tilecolor.items():
+     print('สี: {} ราคา: {}'.format(c,t))
+
+print('------ โปรแกรมคำนวณกระเบื้อง V.2 by Sofwan-------')
 while True:
     try:
             tiles = int(input('คุณต้องการปูกระเบื้องทั้งหมดกี่แผ่น: '))
@@ -41,3 +45,6 @@ print('ต้องปูกระเบื้องทั้งหมด {} แ
 print('เหลือกระเบื้องที่ยังไม่ได้ปูเต็มแถว {} แผ่น'.format(remain_tiles))
 print('ลูกค้าต้องซื้อกระเบื้องเพิ่ม {} แผ่น'.format(buy_more))
 print('ยอดรวมทั้งหมดที่ต้องซื้อกระเบื้องเพิ่ม: {} บาท'.format(buy_more * tilecolor[color]))
+
+
+print('---------------The End--------------------')
